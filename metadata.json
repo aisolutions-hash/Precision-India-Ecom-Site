@@ -1,0 +1,8 @@
+{
+  "name": "Precision Engineering Works",
+  "description": "Precision Engineering Works in Ahmednagar MIDC, Ahmednagar. Leading Drilling Jig Distributors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
