@@ -65,7 +65,7 @@ export default function Home() {
               <div className="text-sm font-medium text-zinc-500 uppercase tracking-wide">Years Experience</div>
             </div>
             <div className="text-center px-4">
-              <div className="text-4xl font-bold text-zinc-900 mb-2">1,200+</div>
+              <div className="text-4xl font-bold text-zinc-900 mb-2">299+</div>
               <div className="text-sm font-medium text-zinc-500 uppercase tracking-wide">Global Clients</div>
             </div>
             <div className="text-center px-4">
