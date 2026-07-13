@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Clock, Award, Users, Target, CheckCircle2 } from 'lucide-react';
 import { products } from '../data/products';
 import { motion } from 'motion/react';
+import extrusionDieImg from '../assets/images/extrusion-die.jpeg';
+import shaftVaryingImg from '../assets/images/shaft-varying-size.jpeg';
+import shaft2Img from '../assets/images/shaft-2.jpeg';
+import forgingDieImg from '../assets/images/forging-die.jpeg';
 
 export default function Home() {
   const bestSellers = products.filter(p => p.isBestSeller || p.isNew).slice(0, 4);
@@ -13,7 +17,7 @@ export default function Home() {
       <section className="relative bg-[#0A0A0A] text-white min-h-[90vh] flex items-center pt-10">
         <div className="absolute inset-0">
           <img 
-            src="/public/Extrusion die.jpeg" 
+            src={extrusionDieImg} 
             alt="Engineering Hero" 
             className="w-full h-full object-cover opacity-30 mix-blend-luminosity"
           />
@@ -91,9 +95,9 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "Precision Shafts", img: "/public/Shaft with varying size.jpeg" },
-              { title: "Guide Pins & Rods", img: "/public/shaft 2.jpeg" },
-              { title: "Drill Jigs & Fixtures", img: "/public/Forging die.jpeg" }
+              { title: "Precision Shafts", img: shaftVaryingImg },
+              { title: "Guide Pins & Rods", img: shaft2Img },
+              { title: "Drill Jigs & Fixtures", img: forgingDieImg }
             ].map((cat, i) => (
               <Link key={i} to="/products" className="group relative h-80 rounded-2xl overflow-hidden bg-zinc-900">
                 <img src={cat.img} alt={cat.title} className="w-full h-full object-cover opacity-60 group-hover:scale-105 group-hover:opacity-80 transition-all duration-700" />

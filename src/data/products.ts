@@ -1,3 +1,10 @@
+import shaftImg from '../assets/images/shaft.jpeg';
+import shaft2Img from '../assets/images/shaft-2.jpeg';
+import shaft3Img from '../assets/images/shaft-3.jpeg';
+import shaftVaryingImg from '../assets/images/shaft-varying-size.jpeg';
+import forgingDieImg from '../assets/images/forging-die.jpeg';
+import extrusionDieImg from '../assets/images/extrusion-die.jpeg';
+
 export type Product = {
   id: string;
   name: string;
@@ -27,8 +34,8 @@ export const products: Product[] = [
     price: 2450,
     rating: 4.8,
     reviews: 124,
-    image: "/Shaft.jpeg",
-    images: ["/Shaft.jpeg", "/shaft 2.jpeg", "/shaft 3.jpeg"],
+    image: shaftImg,
+    images: [shaftImg, shaft2Img, shaft3Img],
     description: "High-torque transmission splined shafts, hardened and ground for industrial applications. Ideal for heavy machinery and gearboxes.",
     inStock: true,
     moq: 10,
@@ -50,8 +57,8 @@ export const products: Product[] = [
     price: 450,
     rating: 4.9,
     reviews: 89,
-    image: "/shaft 2.jpeg",
-    images: ["/shaft 2.jpeg"],
+    image: shaft2Img,
+    images: [shaft2Img],
     description: "Precision ground guide pins for mold and die assemblies. Heat-treated for maximum durability.",
     inStock: true,
     moq: 50,
@@ -71,8 +78,8 @@ export const products: Product[] = [
     price: 3200,
     rating: 4.7,
     reviews: 45,
-    image: "/Shaft with varying size.jpeg",
-    images: ["/Shaft with varying size.jpeg"],
+    image: shaftVaryingImg,
+    images: [shaftVaryingImg],
     description: "Multi-stepped transmission shaft engineered for complex gearbox assemblies.",
     inStock: false,
     moq: 20,
@@ -93,8 +100,8 @@ export const products: Product[] = [
     price: 4500,
     rating: 5.0,
     reviews: 31,
-    image: "/Forging die.jpeg",
-    images: ["/Forging die.jpeg"],
+    image: forgingDieImg,
+    images: [forgingDieImg],
     description: "Precision machined flanged drill jigs for accurate hole placement. Essential for repeatable drilling operations.",
     inStock: true,
     moq: 1,
@@ -113,8 +120,8 @@ export const products: Product[] = [
     price: 12000,
     rating: 4.8,
     reviews: 12,
-    image: "/Extrusion die.jpeg",
-    images: ["/Extrusion die.jpeg"],
+    image: extrusionDieImg,
+    images: [extrusionDieImg],
     description: "Custom engineered extrusion dies for aluminum and plastic manufacturing.",
     inStock: true,
     moq: 1,
